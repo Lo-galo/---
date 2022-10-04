@@ -2,7 +2,8 @@ import {LockOutlined, UserOutlined,} from '@ant-design/icons';
 import {message, Tabs} from 'antd';
 import React, {useState} from 'react';
 import {history} from 'umi';
-import {PLANET_LINK, SYSTEM_LOGO} from '@/constants';
+// import {PLANET_LINK, SYSTEM_LOGO} from '@/constants';
+import {SYSTEM_LOGO} from '@/constants';
 import Footer from '@/components/Footer';
 import {register} from '@/services/ant-design-pro/api';
 import styles from './index.less';
@@ -53,7 +54,8 @@ const Register: React.FC = () => {
           }}
           logo={<img alt="logo" src={SYSTEM_LOGO}/>}
           title="编程导航知识星球"
-          subTitle={<a href={PLANET_LINK} target="_blank" rel="noreferrer">最好的编程学习知识圈子</a>}
+          // subTitle={<a href={PLANET_LINK} target="_blank" rel="noreferrer">最好的编程学习知识圈子</a>}
+          subTitle={'最好的编程学习知识圈子'}
           initialValues={{
             autoLogin: true,
           }}

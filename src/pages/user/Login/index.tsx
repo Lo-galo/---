@@ -1,14 +1,16 @@
 import {
-  AlipayCircleOutlined,
+  // AlipayCircleOutlined,
   LockOutlined,
-  MobileOutlined,
-  TaobaoCircleOutlined,
+  // MobileOutlined,
+  // TaobaoCircleOutlined,
   UserOutlined,
-  WeiboCircleOutlined,
+  // WeiboCircleOutlined,
 } from '@ant-design/icons';
-import {Alert, Button, Divider, message, Space, Tabs} from 'antd';
+// import {Alert, Button, Divider, message, Space, Tabs} from 'antd';
+import {Alert,Divider, message, Space, Tabs} from 'antd';
 import React, {useState} from 'react';
-import {ProFormCaptcha, ProFormCheckbox, ProFormText, LoginForm} from '@ant-design/pro-form';
+import {ProFormCheckbox, ProFormText, LoginForm} from '@ant-design/pro-form';
+// import {ProFormCaptcha, ProFormCheckbox, ProFormText, LoginForm} from '@ant-design/pro-form';
 import {history, useModel} from 'umi';
 import {PLANET_LINK, SYSTEM_LOGO} from '@/constants';
 import Footer from '@/components/Footer';
@@ -76,7 +78,8 @@ const Login: React.FC = () => {
         <LoginForm
           logo={<img alt="logo" src={SYSTEM_LOGO}/>}
           title="编程导航知识星球"
-          subTitle={<a href={PLANET_LINK} target="_blank" rel="noreferrer">最好的编程学习知识圈子</a>}
+          // subTitle={<a href={PLANET_LINK} target="_blank" rel="noreferrer">最好的编程学习知识圈子</a>}
+          subTitle={'最好的编程学习知识圈子'}
           initialValues={{
             autoLogin: true,
           }}

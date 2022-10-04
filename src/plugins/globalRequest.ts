@@ -12,7 +12,9 @@ import {stringify} from "querystring";
  */
 const request = extend({
   credentials: 'include', // 默认请求是否带上cookie
-  prefix: process.env.NODE_ENV === 'production' ? 'http://user-backend.code-nav.cn' : undefined
+  // prefix: process.env.NODE_ENV === 'production' ? 'http://user-backend.code-nav.cn' : undefined
+  // prefix: process.env.NODE_ENV === 'production' ? '1.12.51.123' : undefined
+  prefix: process.env.NODE_ENV === 'production' ? 'http://1.12.51.123:8081' : undefined
   // requestType: 'form',
 });
 
