@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: 'gitee',
+          key: 'github',
           title: <><GithubOutlined/> galo GitHub</>,
           href: 'https://github.com/Lo-galo',
           blankTarget: true,
